@@ -1,0 +1,110 @@
+body {
+  font-family: "lato";
+  font-style: normal;
+  font-size: 16px;
+  line-height: 1.2;
+  font-weight: normal;
+  color: rgb(36, 34, 34);
+}
+.wrapper {
+  max-width: 1060px;
+  margin: 0px auto;
+}
+/*header styls*/
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+.header_wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-end;
+  justify-content: space-between;
+  padding-top: 56px;
+}
+.header_list {
+  display: flex;
+  flex-wrap: wrap;
+}
+.headar_item {
+  margin-right: 82px;
+}
+.headar_item:last-child {
+  margin-right: 0px;
+}
+.header_link {
+  font-size: white;
+  line-height: 24fpx;
+  font-size: 24px;
+  text-decoration: none;
+}
+.header_link:hover,
+.header_link:focus,
+.header_link:active {
+  opacity: 0.75;
+}
+/*ytder finish*/
+/*intro stail*/
+.intro {
+  height: 100vh;
+  background: url(../img/intro-bagro.jpg) no-repeat center;
+  background-size: cover;
+  padding-top: 265px;
+}
+.info_titel {
+  margin-bottom: 22px;
+  min-width: 619px;
+  font-weight: 500;
+  font-size: 50px;
+  line-height: 60px;
+  color: #ffffff;
+}
+.intro_subtitel {
+  color: #ffffff;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  max-width: 546px;
+  margin-bottom: 59px;
+}
+.seach_form .seach-form_wrap {
+  display: flex;
+  flex-wrap: wrap;
+  border: none;
+}
+.search-form_feild {
+  width: 297px;
+  background: transparent url(./img/Oval.svg) no-repeat left center;
+  background-size: 20px;
+  border: 0;
+  border-bottom: 2px solid #ffffff;
+  margin: 40px;
+  padding-left: 43px;
+  padding-bottom: 22px;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 24px;
+  color: #ffffff;
+}
+.search-form_feild::placeholder {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 24px;
+  color: #ffffff;
+}
+.seach-form_submit {
+  height: 30px;
+  padding: 5px;
+  text-transform: uppercase;
+  background: #67647e;
+  border: 0;
+}
+.seach-form_submit:hover,
+.seach-form_submit:focus,
+.seach-form_submit:active {
+  background: #0d054e;
+}
+/*intro finish*/
