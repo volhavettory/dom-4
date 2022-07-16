@@ -1,16 +1,17 @@
 body {
-  font-family: "lato";
+  font-family: "lato", sans-serif;
   font-style: normal;
   font-size: 16px;
   line-height: 1.2;
   font-weight: normal;
   color: rgb(36, 34, 34);
+  height: 100%;
 }
 .wrapper {
   max-width: 1060px;
-  margin: 0px auto;
+  margin: 0 auto;
 }
-/*header styls*/
+/*header styles*/
 .header {
   position: fixed;
   top: 0;
@@ -29,15 +30,15 @@ body {
   display: flex;
   flex-wrap: wrap;
 }
-.headar_item {
+.header_item {
   margin-right: 82px;
 }
-.headar_item:last-child {
-  margin-right: 0px;
+.header_item:last-child {
+  margin-right: 0;
 }
 .header_link {
-  font-size: white;
-  line-height: 24fpx;
+  color: white;
+  line-height: 24px;
   font-size: 24px;
   text-decoration: none;
 }
@@ -46,15 +47,19 @@ body {
 .header_link:active {
   opacity: 0.75;
 }
-/*ytder finish*/
-/*intro stail*/
-.intro {
+/*header finish*/
+.main {
+  min-height: 700px;
   height: 100vh;
-  background: url(../img/intro-bagro.jpg) no-repeat center;
+}
+/*intro style*/
+.intro {
+  height: 100%;
+  background: url(./img/intro-bagro.jpg) no-repeat center;
   background-size: cover;
   padding-top: 265px;
 }
-.info_titel {
+.info_title {
   margin-bottom: 22px;
   min-width: 619px;
   font-weight: 500;
@@ -62,7 +67,7 @@ body {
   line-height: 60px;
   color: #ffffff;
 }
-.intro_subtitel {
+.intro_subtitle {
   color: #ffffff;
   font-weight: 400;
   font-size: 16px;
@@ -70,41 +75,45 @@ body {
   max-width: 546px;
   margin-bottom: 59px;
 }
-.seach_form .seach-form_wrap {
+.search_form .search-form_wrap {
   display: flex;
   flex-wrap: wrap;
   border: none;
+  align-items: baseline;
 }
-.search-form_feild {
+.search-form_field {
   width: 297px;
   background: transparent url(./img/Oval.svg) no-repeat left center;
   background-size: 20px;
   border: 0;
   border-bottom: 2px solid #ffffff;
-  margin: 40px;
-  padding-left: 43px;
-  padding-bottom: 22px;
+  margin: 40px 40px 40px 0;
+  padding: 12px 10px 12px 43px;
   font-weight: 500;
   font-size: 18px;
   line-height: 24px;
   color: #ffffff;
 }
-.search-form_feild::placeholder {
+.search-form_field:focus {
+  outline: none;
+}
+.search-form_field::placeholder {
   font-weight: 500;
   font-size: 18px;
   line-height: 24px;
   color: #ffffff;
 }
-.seach-form_submit {
+.search-form_submit {
   height: 30px;
-  padding: 5px;
+  padding: 5px 10px;
   text-transform: uppercase;
   background: #67647e;
   border: 0;
+  color: white;
 }
-.seach-form_submit:hover,
-.seach-form_submit:focus,
-.seach-form_submit:active {
+.search-form_submit:hover,
+.search-form_submit:focus,
+.search-form_submit:active {
   background: #0d054e;
 }
 /*intro finish*/
